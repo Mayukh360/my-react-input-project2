@@ -1,5 +1,7 @@
 import Form from './Components/Form/Form';
+import classes from './Components/Form/Form.module.css';
 import React, { useState } from 'react';
+import Card from './Components/UI/Card';
 
 
 function App() {
@@ -10,7 +12,7 @@ function App() {
   };
 
   return (
-    <div>
+    <Card className={classes.input}>
       <Form onAddGoal={addGoalHandler} />
       {userList.map((user) => (
         <div key={Math.random().toString()}>
@@ -19,7 +21,7 @@ function App() {
           <p>Age: {user.age} Years Old</p>
         </div>
       ))}
-    </div>
+    </Card>
   );
 }
 

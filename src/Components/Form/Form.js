@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './Form.css';
+
+import Card from '../UI/Card';
+import './Button.css'
 
 
 export default function Form(props) {
@@ -30,6 +32,7 @@ export default function Form(props) {
   };
 
   return (
+  
     <form onSubmit={submitHandler}>
       <div >
         <label>Username</label>
@@ -39,7 +42,8 @@ export default function Form(props) {
         <label>Age(Years)</label>
         <input onChange={inputAgeChangeHandler} type='number' value={enteredAge} />
       </div>
-      <button type='submit'>Add User</button>
+      <button className='button' type='submit'>Add User</button>
     </form>
+    
   );
 }
