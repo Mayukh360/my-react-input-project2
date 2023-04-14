@@ -1,0 +1,10 @@
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    margin-right: 1rem;
+  }
+  
